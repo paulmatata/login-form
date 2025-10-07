@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            body {position: -webkit-sticky; background-color: aqua;
+
+            }
+        </style>
+        <title>webprojectlogin</title>
+    </head>
+    <body>
+        <hr>
+        <h1>Web projects by <b> PAUL MATATA</b></h1>
+        <hr>
+        <h3>login form</h3>
+        <section>
+            <input type="text" id="name" placeholder="name">username:<br><br>
+            <input type="password" id="password" placeholder="password">Password:<br><br>
+            <button onclick="login()" style="background-color: blue; position: centre;">Login</button>
+
+            <hr>
+        </section>
+        <p id="msg"></p>
+
+        <script>
+            function login(){
+                const name=document.getElementById("name").value;
+                const password=document.getElementById("password").value;
+                const msg=document.getElementById("msg");
+                if (name=== "admin"&& password=== "wi1nn2e3r4") {
+                    msg.textContent  ="Admin welcome!";
+                    window.location.href="New folder";
+                } else {
+                    msg.textContent ="unauthorised login!";
+                }
+            }
+            </script>
+            <hr>
+            <footer>
+                <p style="position: centre;">&copy;PAUL MATATA, All rights reserved!</p>
+            </footer>
+            <hr>
+    </body>
+</html>
